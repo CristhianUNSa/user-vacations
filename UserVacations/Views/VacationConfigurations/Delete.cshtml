@@ -1,0 +1,64 @@
+﻿@model UserVacations.Models.VacationConfiguration
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>VacationConfiguration</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VacationYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VacationYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VacationDays)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VacationDays)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RemainingDays)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RemainingDays)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EarnedDays)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EarnedDays)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

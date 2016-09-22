@@ -1,0 +1,74 @@
+﻿@model UserVacations.Models.EmployeeVacation
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EmployeeVacation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VacationFrom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VacationFrom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VacationTo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VacationTo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StatusVacation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StatusVacation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VacationYearTaken)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VacationYearTaken)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VacationNote)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VacationNote)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
